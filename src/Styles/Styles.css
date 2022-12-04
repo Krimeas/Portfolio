@@ -1,0 +1,287 @@
+
+/* Root vfariables, Colors pulled from Pallet from source linked in READme.  Linear Gradient used for h2 and Header elements. */
+:root {
+  --specialBorder: solid 6px #0F1112;
+  --gradient: linear-gradient(
+  #202024,#0F1112, #202024) ;
+  --myWhite: #D7DBDC;
+  --myGrey: #202024;
+  --myBlack: #0F1112;
+ }
+ 
+ 
+ /* Main code for body of the site. Font size and weight happenstance, probably look into better sizing?  get opinions.  Left in faulty code from constant retries on sizing background to STAY in frame of page and not overshoot or undershoot width or height. Background source linked in READme.   */
+ body {
+   font-family: 'Courier New', Courier, monospace;
+   background-image: url(andyone--WW8jBak7bo-unsplash.jpg);
+   background-position-x: center;
+   /* 
+   background-repeat:no-repeat;
+   background-size: auto;
+   background-size: 100%;
+   background-position: center;
+   background-size: 100% 100%; 
+   */
+   color: var(--myWhite);
+   background-color: var(--myGrey);
+   font-size: 1.5em;
+   font-weight: 600;
+ }
+ 
+ /* Color of links did not show well ont he page, brighrter blue chosen to help them POP in sight ont he dark background. */
+ a { 
+   color: rgb(6, 189, 255);
+ }
+ 
+ /* CSS for the header section of the body Section START */
+ 
+ /* aligns 'cody's portfolio', fixes it to the top for scrolling, pulls gradient from root, z index to keep header from slipping behind images, etc.   */
+ header {
+   text-align: center;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1;
+   background-image: var(--gradient);
+ }
+ 
+ /* Header nav element, space-around chosen for more unified look as navbar shrinks, redundencies likely, look into later. */
+ header nav {
+   display: flex;
+   justify-content: space-around;
+   font-size: 20px;
+   font-weight: bold;  
+   float: center;
+   font-family: 'Courier New', Courier, monospace;
+   padding: 8px;
+ }
+ 
+ /* adds color to hovering over a link.  Stuck with Color pallet from READme. */
+ .navigation a:hover {
+   background: var(--myWhite);
+   color: var(--myGrey);
+ }
+ 
+ 
+ /* CSS for the header section of the body Section END */
+ /* CSS for the header section of the body Section END */
+ 
+ 
+ /* CSS for the main section of the body Section START */
+ 
+ /* pushes top image down to allocate room for the nav and header bar.  Alterations for Media sizes rquired and completed below.  Maybe find % choice?  Ask for assistance. */
+ main {
+   margin-top: 150px;
+ }
+ 
+ /* H1 element, fint size chosendue to spacing and preference of appearance on shrink. */
+ h1 {
+   text-align: center;
+   margin: 5px;
+   font-size: larger;
+   font-size: 2.0em;
+ }
+ 
+ /* h2 element only (hover effect (hover-2)added further down) border chosen to make hover effect pop and call out to the words that are centered.  Margin likely due to hold out from attempt to fix header covering h2 element on link click.*/
+ h2 {
+   font-size: 1.5em;
+   border-bottom: var(--specialBorder);
+   border-top: var(--specialBorder);
+   padding: 10px;
+   margin: 150px 50px 50px 50px;
+   text-align: center;
+   font: bold;
+ }
+ 
+ /* margins in percentage chosen at random, could ask advice on appearance. */
+ p {
+   margin: 1% 4%  1% 4%;
+   padding: 10px;
+ }
+ 
+ /* to get the fixed header to stop overlapping the h2's */
+ section {
+   scroll-margin-top: 7rem;
+ }
+ 
+ /* Calls out to all images ont he page, set predominantly for picture of Cody Berry, alteratiosn for other images made below. */
+ img {
+   display: flex;
+   margin: auto;
+   width: 50%;
+   height: 90%;
+   max-width: 800px;
+   min-width: 180px;
+   min-height: 200px;
+ }
+ 
+ /* Special hover element pulls from CSS Tricks; put link and accredation in READme. NO idea how this formual works or why later value of variable being added doens't cause problems.*/
+ .hover-2 {
+   line-height: 1.6em;
+   color: var(--myWhite);
+   background: var(--gradient)
+     bottom/100% calc(100% - var(--_i, 1) * 100%) no-repeat;
+   transition: 0.3s;
+ }
+ /* Same as above, Do not understand what i is actually doing and why I can't just put '0' in above.  More testing?  Pulled specifically for when hovering over h2 element. */
+ .hover-2:hover {
+   --_i: 0;
+ }
+ 
+ 
+ /* CSS for the About Me Section START */
+ 
+ /* Same as above, the for the linkedin link int he about me Section.  Makes it pop when hovering on it. */
+ #aboutMe a:hover {
+   background: var(--myWhite);
+   color: var(--myGrey);
+ }
+ 
+ /* CSS for the Portfolio Section START */
+ 
+ /* Class for dominant portfolio only. Works on h2 element and image.  Removale of h2 from section cuased problems.  */
+ .portfolio {
+   display: flex;
+   flex-flow: wrap row;
+   align-items: center;
+ }
+ 
+ /* Class for links in dominant portfolio only. Additional display: flex removed.  sizing for growth and shirnk of page.  Maybe be holdouts from attempts attempts to correct issues with portfolio 2, but not broken.  */
+ .portfolio a {
+   width: 100%;
+   height: auto;
+   padding: 5px;
+ }
+ 
+ /* controls sizing of main image only, attempts to put in 'a' failed to keep image bigger than images in portfolio 2. */
+  #portfolio1 img{
+   width: 100%;
+   height: auto;
+   padding: 5px;
+ }
+ 
+ /* Portfolio 2 class specifics, used ONLY to wrap images.  Attempts to only use on 'a' casued problems. when trying.  Could swing back and play more later to see if can find a way to consolidate. */
+ .portfolio2 {
+   display: flex;
+   flex-flow: wrap row;
+   justify-content: space-around;
+   align-items: center;
+ }
+ 
+ /* max width set to keep images and their surrounding margins from goign crazy in size.  Only way to fix?   */
+ .portfolio2 a {
+   display: flex;
+   max-width: 500px;
+   height: auto;
+   padding: 5px;
+ }
+ 
+ /* Works specifically on image sizing, attempts to figrue out a way to leave them in the 'a' tag unsuccessful.  */
+ #portfolio2 img{
+   display: flex;
+   width: 80%;
+   max-width:500px;
+   height: auto;
+   padding: 5px;
+ }
+ 
+ /* adds 'shadow' effect around the image/protfolio links.   */
+ img:hover {
+   box-shadow: 20px 10px 20px var(--myBlack);
+   transition: .3s;
+ }
+ 
+ /* CSS for the contact Me Section START */
+ 
+ /* Hover effect for links for linkedin, email, and github in contact me section. */
+ #contactMe ul a:hover {
+   background: var(--myWhite);
+   color: var(--myGrey);
+ }
+ 
+ /* CSS for the main section of the body Section END */
+ /* CSS for the main section of the body Section END */
+ 
+ /* Footer Element CSS START */
+ 
+ /* simple footer styling */
+ footer {
+   text-align: center;
+   font-size: 20px;
+   margin: 25px;
+   padding: 25px;
+ }
+ 
+ /* Styling for the footers ul items to get the m to move and wrap with shrink and expansion of page. */
+ ul {
+   display: flex;
+   flex-flow: wrap row;
+   justify-content: space-around;
+ }
+ 
+ /* CSS for the footer section of the body Section END */
+ /* CSS for the footer section of the body Section END */
+ 
+ 
+ /* Media alterations START */
+ 
+ /* Problem with background image 'stopping' on the right of the screen when expanded past this point corrected.  Small issue with sudden image jump though. */
+ @media screen and (min-width: 2400px) {
+   body {
+     background-size: 100%;
+   }
+   }
+ 
+ /* fixes poftolio2 items to wrap column instead of row when page gets this small.  Continues to apply to later elements. */
+ @media screen and (max-width: 992px) {
+   .portfolio2 {
+     display:flex;
+     flex-flow: wrap column;
+   }
+   }
+ 
+   /* Margin correction for Header pushign down over image of Cody Berry.  */
+ @media screen and (max-width: 992px) {
+   main {
+     margin-top: 175px;
+   }
+   /* h2 {
+     margin-top: 175px;
+   } */
+ }
+ 
+ /* removed redundent code of more h2 fix attempts, m,argin set to push image down more.  has to be better way then multiple correctiosn for each size.  nav rewritten to wrap into coolumn.  img tag removed as useless from attempts to fix error that was corrected with protfolio 1 and 2 split.  Nav padding added to spread elements pushed too close together.  UL from contact me, changed to row for appearance and ease of seeing information. */
+ @media screen and (max-width: 768px) {
+   main {
+     margin-top: 250px;
+   }
+   
+   header nav {
+     display: flex;
+     flex-flow: wrap column;
+     justify-content: center;
+   }
+ 
+   .navigation a {
+     padding: 5px;
+   }
+   
+   #contactMe ul {
+     display: flex;
+     flex-flow: wrap column;
+     align-content: center;
+   }
+ 
+ }
+ 
+ /* unlikely to get screens this small?  Problems wiht Margin on top for image again, this time from header name being too long, corrected. h2 font size altered for appearance sake on tiny screens. */
+ @media screen and (max-width: 445px) {
+   main {
+     margin-top: 300px;
+   }
+ 
+   h2 {
+     font-size: 1.0em;
+   }
+ }
+ 
