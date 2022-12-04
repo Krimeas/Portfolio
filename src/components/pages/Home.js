@@ -6,6 +6,7 @@ export default function Home() {
     <section id="PersonImage">
       <img src='src\assets\IMG_0540.JPG' alt="picture of Cody Berry"></img>
     </section>
+    
 
 
   {/* About Me section, first use of hover-2for heading 2 styles.  Span added for linkedin link */}

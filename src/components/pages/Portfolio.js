@@ -8,7 +8,7 @@ export default function Portfolio() {
         <h2 class="hover-2">Portfolio</h2>
         <div class="portfolio">
           <a id="portfolio1" href="https://sarahthoorens.github.io/movies-and-more/" target="_blank" >
-          <img src="assets/landing1.jpeg" alt="image of prework studyguide website"></img>
+          <img src="src/assets/landing1.jpeg" alt="image of prework studyguide website"></img>
           </a>
         </div>
       </section>
@@ -18,19 +18,19 @@ export default function Portfolio() {
       {/* Portfolio 2 section, multiple portfolios, three real two fake for demonstration purposes.  Image source links in READme.  Class and ID for portfolio 2 broken apart to correct styling issues.  Different from 'Portfolio' for style issues related to size. */}
       <section class="portfolio2">
         <a id="portfolio2" href="https://krimeas.github.io/01---Challenge/" target="_blank" >
-          <img src="assets/chal1.JPG" alt="image of challenge 01 website"></img>
+          <img src="src/assets/chal1.JPG" alt="image of challenge 01 website"></img>
         </a>
 
         <a id="portfolio2" href="https://krimeas.github.io/First-Portfolio/" target="_blank">
-          <img src="assets/chal2.JPG" alt="image of challenge 02 website"></img>
+          <img src="src/assets/chal2.JPG" alt="image of challenge 02 website"></img>
         </a>
 
         <a id="portfolio2" href="https://krimeas.github.io/prework-study-guide/" target="_blank" >
-          <img src="assets/PreworkSG.JPG" alt="image of prework studyguide website"></img>
+          <img src="src/assets/PreworkSG.JPG" alt="image of prework studyguide website"></img>
         </a>
 
         <a id="portfolio2" href="https://github.com/Krimeas" target="_blank">
-          <img src="assets/mario-gogh-VBLHICVh-lI-unsplash.jpg" alt="Filler image for fake Portfolio4"></img>
+          <img src="src/assets/mario-gogh-VBLHICVh-lI-unsplash.jpg" alt="Filler image for fake Portfolio4"></img>
         </a>
 
       </section>

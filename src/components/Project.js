@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Navigation from './Navigation';
 import Home from '../components/pages/Home';
-import About from '../components/pages/Contact';
-import Blog from '../components/pages/Portfolio';
-import Contact from '../components/pages/Resume';
-
+import Contact from '../components/pages/Contact';
+import Portfolio from '../components/pages/Portfolio';
+import Resume from '../components/pages/Resume';
+import '../styles/styles.css';
 
 export default function Project() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -23,6 +23,7 @@ export default function Project() {
     return <Home />;
   };
 
+
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
@@ -33,4 +34,6 @@ export default function Project() {
       {renderPage()}
     </div>
   );
+
+
 }
