@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Krimeas/portfolio/static/css/main.962e7eab.chunk.css",
+    "main.js": "/Krimeas/portfolio/static/js/main.1d22ae65.chunk.js",
+    "main.js.map": "/Krimeas/portfolio/static/js/main.1d22ae65.chunk.js.map",
+    "runtime-main.js": "/Krimeas/portfolio/static/js/runtime-main.69c5634d.js",
+    "runtime-main.js.map": "/Krimeas/portfolio/static/js/runtime-main.69c5634d.js.map",
+    "static/css/2.f26e749f.chunk.css": "/Krimeas/portfolio/static/css/2.f26e749f.chunk.css",
+    "static/js/2.f95806cc.chunk.js": "/Krimeas/portfolio/static/js/2.f95806cc.chunk.js",
+    "static/js/2.f95806cc.chunk.js.map": "/Krimeas/portfolio/static/js/2.f95806cc.chunk.js.map",
+    "index.html": "/Krimeas/portfolio/index.html",
+    "static/css/2.f26e749f.chunk.css.map": "/Krimeas/portfolio/static/css/2.f26e749f.chunk.css.map",
+    "static/css/main.962e7eab.chunk.css.map": "/Krimeas/portfolio/static/css/main.962e7eab.chunk.css.map",
+    "static/js/2.f95806cc.chunk.js.LICENSE.txt": "/Krimeas/portfolio/static/js/2.f95806cc.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/Krimeas/portfolio/static/media/andyone--WW8jBak7bo-unsplash.2874d11e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69c5634d.js",
+    "static/css/2.f26e749f.chunk.css",
+    "static/js/2.f95806cc.chunk.js",
+    "static/css/main.962e7eab.chunk.css",
+    "static/js/main.1d22ae65.chunk.js"
+  ]
+}

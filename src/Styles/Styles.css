@@ -13,7 +13,7 @@
  /* Main code for body of the site. Font size and weight happenstance, probably look into better sizing?  get opinions.  Left in faulty code from constant retries on sizing background to STAY in frame of page and not overshoot or undershoot width or height. Background source linked in READme.   */
  body {
    font-family: 'Courier New', Courier, monospace;
-   background-image: url(andyone--WW8jBak7bo-unsplash.jpg);
+   background-image: url(../assets/andyone--WW8jBak7bo-unsplash.jpg);
    background-position-x: center;
    /* 
    background-repeat:no-repeat;
