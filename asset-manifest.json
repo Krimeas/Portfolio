@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Krimeas/portfolio/static/css/main.962e7eab.chunk.css",
-    "main.js": "/Krimeas/portfolio/static/js/main.1d22ae65.chunk.js",
-    "main.js.map": "/Krimeas/portfolio/static/js/main.1d22ae65.chunk.js.map",
+    "main.js": "/Krimeas/portfolio/static/js/main.28140255.chunk.js",
+    "main.js.map": "/Krimeas/portfolio/static/js/main.28140255.chunk.js.map",
     "runtime-main.js": "/Krimeas/portfolio/static/js/runtime-main.69c5634d.js",
     "runtime-main.js.map": "/Krimeas/portfolio/static/js/runtime-main.69c5634d.js.map",
     "static/css/2.f26e749f.chunk.css": "/Krimeas/portfolio/static/css/2.f26e749f.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.f26e749f.chunk.css",
     "static/js/2.f95806cc.chunk.js",
     "static/css/main.962e7eab.chunk.css",
-    "static/js/main.1d22ae65.chunk.js"
+    "static/js/main.28140255.chunk.js"
   ]
 }
